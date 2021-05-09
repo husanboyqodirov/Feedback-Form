@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Form</title>
+	<style type="text/css">
+		html, body {
+			font-family: calibri;
+		}
+		fieldset {
+			width: 20%;
+			border-radius: 10px;
+			padding-top: 10px;
+			box-shadow: 3px 3px 2px 2px grey;
+		}
+		input, textarea {
+			width: 100%;
+			border-radius: 10px;
+			padding-left: 7px;
+		}
+		input {
+			height: 20px;
+		}
+		textarea {
+			height: 100px;
+		}
+		button {
+			width: 70px;
+			height: 35px;
+			border: solid white;
+			border-radius: 10px;
+		}
+		button:hover {
+			cursor: pointer;
+			color: white;
+			background: grey;
+		}
+	</style>
+</head>
+<body>
+	<form action="send.php" method="POST">
+		<fieldset>
+			<legend>Contact Us</legend>
+			<table>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" name="userName"></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="email" name="userEmail"></td>
+				</tr>
+				<tr>
+					<td>Subject:</td>
+					<td><input type="text" name="userSubject"></td>
+				</tr>
+				<tr>
+					<td>Messege:</td>
+					<td><textarea name="userMessege"></textarea></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button type="submit" name="btnSubmit">Submit</button></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>
